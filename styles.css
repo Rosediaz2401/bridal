@@ -1,0 +1,436 @@
+:root{
+    --main-font: "Montserrat", sans-serif;
+    --font-size:14px;
+    --c-grey: #B2B2B2;
+    --c-light: #fff;
+    --ca-light: 255,255,255;
+    --c-dark: #1b1b1b;
+    --c-purple:#916e79;
+    --c-dark-grey:#888;
+    --grey-footer:#565656;
+    --container-width:1200px;
+}
+@font-face {
+    font-family: 'arca_majora_3bold';
+    src: url('./font/arcamajora3-bold-webfont.woff2') format('woff2'),
+         url('./font/arcamajora3-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+}
+*:before,
+*:after{
+box-sizing: inherit;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+.menu-container{
+    display: none;
+}
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    padding: 20px 45px;
+    position: relative;
+}
+.hamburger-inner, 
+.hamburger-inner:after, 
+.hamburger-inner:before {
+    width: 24px;
+}
+.hamburger{
+    padding: 10px;
+}
+.hamburger-box{
+    width: 22px;
+}
+.panel{
+    z-index: 998;
+    left: -100%;
+    transition: left .9s ease;
+    position: absolute;
+    display: block;
+}
+
+  .panel-btn{
+    z-index: 999;
+    bottom: 1vh;
+    right: 1vh;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color) !important;
+}
+.panel.is-active{
+    left: 0;
+    width: 40%;
+    opacity: .9;
+    
+}
+
+.panel.is-active .menu{
+    display: block;
+}
+
+.media-icons{
+    display: none;
+}
+.menu{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+.navigation{
+    background-color: var(--c-light);
+    width: 100%;
+    line-height: 4;
+}
+li a{
+    text-decoration: none;
+    color: var(--c-dark);
+}
+.menu-item{
+    list-style: none;
+}
+.logo{
+    display: flex;
+}
+.logo-img{
+    max-height: 75px;
+}
+.share{
+    max-width: 21px;
+    max-height: 24px;
+    padding: 10px;
+    display: flex;
+}
+.social-wrap{
+    display: flex;
+}
+.main-container{
+    text-align: center;
+    padding: 15px 50px;
+}
+.img-container{
+    width: 100%;
+}
+.wed-img{
+    width: 100%;
+    height: auto;
+}
+
+.section-img{
+    width: 100%;
+    margin:10px auto;
+}
+.text-container{
+    text-align: justify;
+}
+.title{
+    color: var(--c-purple);
+    text-align: left;
+    font-family: Abril Fatface;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 0%;
+}
+p{
+    font-family: "Georgia", sans-serif;
+    color: var(--c-grey);
+}
+.section-btn{
+    text-align: left;
+    margin-bottom: 16px;
+}
+.btn{
+    color: #fff;
+    background-color: var(--c-purple);
+    font-size: 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'arca_majora_3bold';
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    border: none;
+}
+.video{
+    height: 230px;
+    padding-bottom: 16px;
+}
+.video-title{
+    text-align: right;
+}
+.see-video{
+    text-align: right;
+}
+.promo-container{
+    background-color: var(--c-purple);
+    padding: 15px 30px;
+    margin: 15px;
+}
+.title-promo,
+.testimonial-title{
+    font-size: 34px;
+    padding: 20px 0px 10px 0px;
+    border-bottom: solid 1px;
+    text-align: center;
+}
+.promo,
+.testimonial{
+    color: var(--c-light);
+    font-family: Abril Fatface;
+    text-align: center;
+    margin-top: 0px;
+    line-height: 1.5;
+}
+.testimonial{
+    color: var(--c-purple);
+}
+.testimonial-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.test-name{
+    color: var(--c-dark-grey);
+    font-size: 12px;
+    font-family: 'arca_majora_3bold';
+    margin-top: 0;
+}
+.testimonial-comments{
+    font-family: 'arca_majora_3bold';
+    color: var(--c-dark);
+    margin-top: 0;
+}
+.quotation-mark{
+    height: 32px;
+    width: 32px;
+    margin-bottom: 16px;
+    filter: opacity(0.1);
+}
+.footer{
+    background-color: #cccccc;
+    margin: 15px 15px 0px 15px;
+    padding: 15px 30px 5px 30px;
+}
+.footer-text{
+    color: var(--grey-footer);
+    color: var(--grey-footer);
+    text-align: center;
+    font-family: Abril Fatface;
+    line-height: 1.5;
+}
+
+@media only screen and (min-width: 420px) {
+    .video{
+        height: 340px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .img-be-inspired{
+        width: 80%;
+    }
+    .video{
+        height: 390px;
+    }
+    .promo-img{
+        margin: 25px auto;
+    }
+}
+
+@media only screen and (min-width: 580px) {
+    .video{
+        height: 510px;
+    }
+}
+
+@media only screen and (min-width: 780px) {
+    .title{
+        font-size: 36px;
+    }
+    .info-section{
+        display: flex;
+        padding: 0px 30px;
+        margin-bottom: 15px;
+    }
+     .text-container{
+        align-self: center;
+    }
+    p{
+        line-height: 2;
+    }
+    .text-right{
+        padding: 0px 20px;
+    }
+    .img-be-heard{
+        width: 20%;
+        padding: 0px;
+        align-self: flex-start;
+    }
+    .section-be-remembered{
+        padding: 0 26px ;
+    }
+    .img-be-remembered{
+        width: 100%;
+    }
+    .media-section{
+        display: flex;
+        width: 100%;
+    }
+    .media-container{
+        width: 100%;
+        padding: 0px 30px;
+    }
+    .video{
+        height: 290px;
+        padding-bottom: 0px;
+    }
+    .promo-container{
+        margin: 15px 50px;
+    }
+    .promo-mini{
+        margin: 16px auto;
+        padding: 10px;
+        height: 100%;
+        width: 30%;
+    }
+    .promo{
+        padding-top: 20px;
+    }
+    .promos{
+        display: flex;
+    }
+    .testimonial-main-container{
+        margin: 0px 50px;
+    }
+    .testimonial-title{
+        font-size: 44px;
+    }
+    .testimonial{
+        padding: 20px 0px;
+    }
+    .testimonial-section{
+        display: flex;
+    }
+    .testimonial-container{
+        width: 100%;
+    }
+    .testimonial-comments{
+        padding: 0px 10px;
+    }
+}
+@media only screen and (min-width: 990px) {
+    .video{
+        height: 389px;
+    }
+}
+@media only screen and (min-width: 1025px) {
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 45px;
+    }
+    .media-icons{
+        max-width: 21px;
+        max-height: 24px;
+        padding: 10px;
+        display: flex;
+    }
+    .panel-btn{
+        display: none;
+    }
+    .panel.is-active{
+        width: 75%;
+    }
+    .menu-section{
+        display: flex;
+        align-items: center;
+    }
+    .menu-container{
+       display: flex;
+   }
+   .panel{
+       transform: translate(0,0);
+       position: relative;
+       left: auto;
+   }
+   .navigation{
+       display: flex;
+       list-style: none;
+       padding: 0%;
+   }
+   .main-menu{
+    display: flex;
+    align-items: center;
+   }
+   .menu-item{
+       text-decoration: none;
+       padding: 0px 13px;
+       font-size: 12px;
+       color: var(--c-grey);
+   }
+   .menu-item a{
+       text-decoration: none;
+       color: var(--c-grey);
+   }
+   .logo-responsive{
+       display: none;
+   }
+   .share{
+       display: none;
+   }
+}
+@media only screen and (min-width: 1200px) {
+    .menu-item{
+        text-decoration: none;
+        padding: 0px 20px;
+        font-size: 12px;
+        color: var(--c-grey);
+    }
+    .main-container{
+        margin: 0px 100px;
+    }
+    .promo-container,
+    .testimonial-main-container{
+        margin: 0px 100px
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    
+    .main-container{
+        margin: 0px 200px;
+    }
+    .promo-container,
+    .testimonial-main-container{
+        margin: 0px 200px
+    }
+}
