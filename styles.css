@@ -40,7 +40,7 @@ body{
 }
 .header-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .header{
@@ -90,9 +90,7 @@ body{
     display: block;
 }
 
-.media-icons{
-    display: none;
-}
+
 .menu{
     width: inherit;
     display: flex;
@@ -113,6 +111,9 @@ li a{
 }
 .menu-item{
     list-style: none;
+    }
+.menu-item a:hover{
+    color: #1b1b1b;
 }
 .logo{
     display: flex;
@@ -128,6 +129,31 @@ li a{
 }
 .social-wrap{
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    height: 150px;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    padding: 20px;
+    opacity: 0;
+    transition: 1s ease;
+}
+ .social-wrap.is-active{
+    opacity: 1;
+}
+.is-active .media-icons{
+    display: flex;
+}
+.share-icons{
+  max-width: 30px;
+    max-height: 30px;
+}
+.media-icons{
+    display: none;
+   
 }
 .main-container{
     text-align: center;
@@ -158,9 +184,21 @@ li a{
     line-height: 35px;
     margin: 0%;
 }
+.photo-title{
+    text-align: center;
+}
 p{
     font-family: "Georgia", sans-serif;
     color: var(--c-grey);
+}
+.img-photos{
+    width: 100%;
+    padding-bottom: 15px;
+}
+.photo-text{
+    text-align: center;
+    padding: 0px 20px;
+    line-height: 2;
 }
 .section-btn{
     text-align: left;
@@ -178,6 +216,15 @@ p{
     font-weight: 400;
     letter-spacing: 0.5px;
     border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #f2f2f2;
+    border-color: var(--c-dark-grey);
+    background-color: var(--c-dark-grey)
+}
+.btn-photo{
+    text-align: center;
 }
 .video{
     height: 230px;
@@ -200,6 +247,7 @@ p{
     padding: 20px 0px 10px 0px;
     border-bottom: solid 1px;
     text-align: center;
+    color: var(--c-light);
 }
 .promo,
 .testimonial{
@@ -247,12 +295,6 @@ p{
     line-height: 1.5;
 }
 
-@media only screen and (min-width: 420px) {
-    .video{
-        height: 340px;
-    }
-}
-
 @media only screen and (min-width: 480px) {
     .img-be-inspired{
         width: 80%;
@@ -265,13 +307,10 @@ p{
     }
 }
 
-@media only screen and (min-width: 580px) {
+@media only screen and (min-width: 780px) {
     .video{
         height: 510px;
     }
-}
-
-@media only screen and (min-width: 780px) {
     .title{
         font-size: 36px;
     }
@@ -286,6 +325,7 @@ p{
     p{
         line-height: 2;
     }
+    
     .text-right{
         padding: 0px 20px;
     }
@@ -295,7 +335,7 @@ p{
         align-self: flex-start;
     }
     .section-be-remembered{
-        padding: 0 26px ;
+        padding: 0 25px ;
     }
     .img-be-remembered{
         width: 100%;
@@ -313,7 +353,7 @@ p{
         padding-bottom: 0px;
     }
     .promo-container{
-        margin: 15px 50px;
+        margin: 15px 50px 0px;
     }
     .promo-mini{
         margin: 16px auto;
@@ -338,13 +378,23 @@ p{
     }
     .testimonial-section{
         display: flex;
+        padding: 0px 10px;
     }
     .testimonial-container{
         width: 100%;
     }
-    .testimonial-comments{
-        padding: 0px 10px;
+    .photos-container{
+        display: flex;
+        flex-wrap: wrap;
     }
+    .img-photos{
+        padding: 10px;
+    }
+    .photo-video-container{
+        display: flex;
+        padding: 10px;
+    }
+
 }
 @media only screen and (min-width: 990px) {
     .video{
@@ -387,6 +437,16 @@ p{
        list-style: none;
        padding: 0%;
    }
+   .social-wrap{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 1;
+    height: auto;
+    position: inherit;
+    width: auto;
+   }
+  
    .main-menu{
     display: flex;
     align-items: center;
@@ -395,7 +455,8 @@ p{
        text-decoration: none;
        padding: 0px 13px;
        font-size: 12px;
-       color: var(--c-grey);
+       color: var(--c-dark);
+       font-size: 11px;
    }
    .menu-item a{
        text-decoration: none;
@@ -413,7 +474,6 @@ p{
         text-decoration: none;
         padding: 0px 20px;
         font-size: 12px;
-        color: var(--c-grey);
     }
     .main-container{
         margin: 0px 100px;
