@@ -44,7 +44,7 @@ body{
     align-items: center;
 }
 .header{
-    padding: 20px 45px;
+    padding: 20px 25px;
     position: relative;
 }
 .hamburger-inner, 
@@ -195,6 +195,114 @@ p{
     width: 100%;
     padding-bottom: 15px;
 }
+.package-photos{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 5px;
+}
+.packages-info{
+    color: var(--c-dark);
+    font-family: Abril Fatface;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 5px;
+}
+.package-price{
+    font-size: 26px;
+}
+.package-btn{
+    text-align: center !important
+}
+.explore-more-container{
+    padding: 0px 35px 30px;
+    background-color: #fef1f2;
+    margin: 0px 15px;
+}
+.video-packages-container{
+    background-color: #f3e2db;
+    padding: 25px 15px 10px;
+    margin: 0px 15px 0px;
+    color: #727272;
+    font-family: Abril Fatface;
+}
+.title-extra-package{
+    color: var(--grey-footer);
+    text-align: center;
+    font-size: 22px;
+    padding-top: 35px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.video-pack{
+    font-weight: normal;
+}
+.premium{
+    background-color: #f4bbbc;
+    margin-top: 0px;
+}
+.video-package-text{
+    font-weight: normal;
+    font-size: 14px;
+}
+.extra-package{
+    color: #727272;
+    font-family: Abril Fatface;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.extra-services{
+    box-shadow: none;
+    padding: 0px;
+}
+.contact{
+    font-size: 17px;
+    text-align: left;
+    color: var(--c-purple);
+    font-family: Abril Fatface;
+    margin: 0px;
+}
+.map,
+.img-map{
+    width: 100%;
+    margin-top: 16px;
+}
+.contact-container{
+    text-align: left;
+    padding: 15px;
+}
+.contact-info,
+.your-info{
+    font-family: 'arca_majora_3bold';
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    text-align: left;
+}
+.contact-input{
+    width: 100%;
+    background-color: #f2f2f2;
+    border: none;
+    height: 50px;
+    margin: 10px 0px 0px;
+}
+.msj-input{
+    height: 150px;
+}
+.your-info{
+    color: var(--c-dark-grey);
+    margin-top: 0px;
+}
+.contact-btn{
+    background-color: var(--c-dark);
+    color: var(--c-light);
+    padding: 20px;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'arca_majora_3bold';
+    margin: 10px 0px 0px;
+    border: none;
+} 
+
 .photo-text{
     text-align: center;
     padding: 0px 20px;
@@ -233,6 +341,9 @@ p{
 }
 .photo-video-container{
     padding-bottom: 30px;
+}
+.package-container{
+    padding: 20px 0px 10px 0px;
 }
 .video{
     height: 230px;
@@ -417,11 +528,75 @@ p{
     .portafolio-videos{
         width:47%
     }
-
+    .wed-package{
+        display: flex;
+        margin-bottom: 25px;
+    }
+    .package-info{
+        width: 100%;
+        padding: 0px 30px;
+    }
+    .package-photos{
+        width: 95%;
+    }
+    .wed-packages-available{
+        font-size: 17px;
+    }
+    .wed-package-title{
+        padding-top: 0px;
+        font-size: 30px;
+    }
+    .extra-services{
+        width: 100%;
+        padding: 0px;
+    }
+    .extras{
+        padding: 10px;
+        width: 100%;
+        align-self: baseline;
+    }
+    .explore-more-container,
+    .explore-video{
+        margin: 0px 75px;
+    }
+    .explore-video{
+        display: flex;
+        margin-top: 16px;
+    }
+    .video-packages-container{
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+    .premium{
+        margin-left: 0;
+        width: 100%;
+    }
+    .contact-section{
+        display: flex;
+        align-items: baseline;
+    }
+    .maps-section{
+        width: 100%;
+    }
+    
+    .contact-container{
+        padding: 0px 35px;
+        width: 100%;
+    }
+    .contact-btn{
+        width: 50%;
+    }
+    .form-btn{
+        text-align: center;
+    }
 }
 @media only screen and (min-width: 990px) {
     .video{
         height: 389px;
+    }
+    .portafolio-videos{
+        min-height: 500px;
     }
 }
 @media only screen and (min-width: 1025px) {
@@ -491,6 +666,12 @@ p{
    .share{
        display: none;
    }
+   .explore-video{
+    margin-top: 30px;
+   }
+   .contact-container{
+    margin: 0xp 50px;
+   }
 }
 @media only screen and (min-width: 1200px) {
     .menu-item{
@@ -498,22 +679,30 @@ p{
         padding: 0px 20px;
         font-size: 12px;
     }
-    .main-container{
-        margin: 0px 100px;
-    }
+    .main-container,
     .promo-container,
-    .testimonial-main-container{
-        margin: 0px 100px
+    .testimonial-main-container,
+    .explore-more-container{
+        margin: 0px 100px 0px;
+    }   
+    .contact-container{
+        margin: 0px;
     }
 }
 
 @media only screen and (min-width: 1400px) {
     
-    .main-container{
-        margin: 0px 200px;
-    }
+    .main-container,
     .promo-container,
-    .testimonial-main-container{
-        margin: 0px 200px
+    .testimonial-main-container,
+    .explore-more-container,
+    .explore-video{
+        margin: 0px 200px 0px;
+    }
+    .explore-video{
+        margin-top: 50px;
+    }
+    .contact-container{
+        margin: 0px;
     }
 }
