@@ -360,6 +360,106 @@ p{
     padding: 15px 30px;
     margin: 15px;
 }
+.book-img{
+    box-shadow: none;
+}
+.booking-title{
+    text-align: left;
+    padding: 0px 20px;
+}
+.booking-text{
+    text-align: left;
+}
+
+.offer-title{
+    padding-top: 0px !important; 
+}
+.offer-container{
+    padding: 0px 50px;
+}
+.offer-text{
+    text-align: center;
+}
+.offer-img:hover{
+    opacity: .7;
+    transition: .5s ease-out;
+}
+.blog-section a{
+    text-decoration: none;
+}
+.blog-names{
+    font-family: 'arca_majora_3bold';
+    text-align: left;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 2.7px;
+    padding: 0px 16px;
+    color: #1b1b1b;
+}
+.blog-text{
+    padding: 0px 16px;
+}
+.date{
+    font-size: 11px;
+    font-family: "ArcaMajora3 Bold", sans-serif;
+    color: #b2b2b2;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: left;
+    padding: 0px 16px;
+}
+
+.content-overlay-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .content-overlay-wrap img{
+      width: 100%;
+      height: auto;
+  }
+  .content-overlay-wrap .content-overlay {
+    background: rgba(56, 56, 56, 0.7);
+    position: absolute;
+    height: 93%;
+    width: 100%;
+    left: 5px;
+    top: 5px;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .content-overlay-wrap:hover .content-overlay{
+    opacity: 1;
+  }
+  .name-title{
+    padding: 0px 16px;
+    text-align: center;
+  }
+  .blog-mini-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .mini-blog-section{
+    width: 45%;
+    padding: 5px;
+  }
+  .wed-text{
+    margin: 0px 50px;
+    padding: 15px 50px;
+  }
+  .wed-titles{
+    letter-spacing: 3.3px;
+    margin: 0px 50px;
+    padding: 5px 50px;
+  }
+
 .title-promo,
 .testimonial-title{
     font-size: 34px;
@@ -424,6 +524,11 @@ p{
     .promo-img{
         margin: 25px auto;
     }
+    .content-overlay-wrap .content-overlay {
+        height: 97%;
+        left: 5px;
+        top: 5px;
+      }
 }
 
 @media only screen and (min-width: 780px) {
@@ -590,6 +695,49 @@ p{
     .form-btn{
         text-align: center;
     }
+    
+    .offer-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    .offer-img{
+        width: 45%;
+    }
+    .offer-text{
+        padding-top: 16px;
+    }
+    .offer-section{
+        margin-bottom: 50px;
+    }
+    .blog-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .blog-section{
+        width: 50%;
+    }
+    .blog-img{
+        width: 30%;
+    }
+    .img-blog-container{
+        width: 100%;
+    }
+    .blog-info{
+        width: 70%;
+    }
+    .content-overlay-wrap .content-overlay {
+        position: absolute;
+        height: 92%;
+        left: 9px;
+        top: 8px;
+      }
+    .mini-blog-section{
+       width: 31%;
+       padding: 5px;
+    }
 }
 @media only screen and (min-width: 990px) {
     .video{
@@ -672,6 +820,16 @@ p{
    .contact-container{
     margin: 0xp 50px;
    }
+   .blog-section{
+    width: 33%;
+    }
+    .wed-text{
+        margin:0px 100px;
+      }
+      .wed-titles{
+        margin:0px 100px;
+      }
+
 }
 @media only screen and (min-width: 1200px) {
     .menu-item{
@@ -705,4 +863,13 @@ p{
     .contact-container{
         margin: 0px;
     }
+    .content-overlay-wrap .content-overlay {
+        height: 94%;
+      }
+      .wed-text{
+        margin:0px 200px;
+      }
+      .wed-titles{
+        margin:0px 400px;
+      }
 }
