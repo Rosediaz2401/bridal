@@ -166,7 +166,15 @@ li a{
     width: 100%;
     height: auto;
 }
-
+.img-container-blog{
+    background-color: black;
+}
+.banner{
+    left: 0;
+    top: 0;
+    opacity: .5;
+    height: 100%;
+}
 .section-img{
     width: 100%;
     margin:10px auto;
@@ -452,14 +460,44 @@ p{
   }
   .wed-text{
     margin: 0px 50px;
-    padding: 15px 50px;
+    padding: 0px;
   }
   .wed-titles{
     letter-spacing: 3.3px;
     margin: 0px 50px;
-    padding: 5px 50px;
+    padding: 0px;
   }
-
+  .top-text{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 23%;
+    color: white;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 0px 20px;
+    font-family: 'arca_majora_3bold';
+  }
+  .faq-text {
+    font-family: Abril Fatface;
+    text-align: left;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: normal;
+  }
+  .purple-text{
+    color: var(--c-purple);
+  }
+  .dark-text{
+    color: var(--c-dark);
+  }
+.answer-text{
+    text-align: left;
+    padding: 0px 15px;
+    line-height: 2;
+}
 .title-promo,
 .testimonial-title{
     font-size: 34px;
@@ -529,6 +567,10 @@ p{
         left: 5px;
         top: 5px;
       }
+    .top-text{
+       top: 30%;
+       font-size: 21px;
+    }
 }
 
 @media only screen and (min-width: 780px) {
@@ -738,6 +780,10 @@ p{
        width: 31%;
        padding: 5px;
     }
+    .top-text{
+        top: 40%;
+        font-size: 25px;
+     }
 }
 @media only screen and (min-width: 990px) {
     .video{
@@ -746,6 +792,10 @@ p{
     .portafolio-videos{
         min-height: 500px;
     }
+    .top-text{
+        top: 50%;
+        font-size: 30px;
+     }
 }
 @media only screen and (min-width: 1025px) {
     .header{
@@ -825,9 +875,11 @@ p{
     }
     .wed-text{
         margin:0px 100px;
+        padding: 15px 50px;
       }
       .wed-titles{
         margin:0px 100px;
+        padding: 5px 50px;
       }
 
 }
@@ -846,6 +898,10 @@ p{
     .contact-container{
         margin: 0px;
     }
+    .top-text{
+        top: 60%;
+        font-size: 35px;
+     }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -872,4 +928,8 @@ p{
       .wed-titles{
         margin:0px 400px;
       }
+      .top-text{
+        top: 70%;
+        font-size: 40px;
+     }
 }
