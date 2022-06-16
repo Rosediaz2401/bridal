@@ -486,6 +486,12 @@ p{
     font-size: 17px;
     line-height: 1.5;
     font-weight: normal;
+    margin-bottom: 0px;
+    background-image: url('./img/plus-black-symbol_icon-icons.com_73453.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 10px;
+    padding-left: 20px;
   }
   .purple-text{
     color: var(--c-purple);
@@ -495,8 +501,18 @@ p{
   }
 .answer-text{
     text-align: left;
-    padding: 0px 15px;
+    padding: 0px 20px;
     line-height: 2;
+    display: none;
+}
+.more-info.my-active .answer-text{
+    display: block;
+}
+.more-info{
+    display: block;
+}
+.more-info.my-active .faq-text{
+    background-image: url('./img/less_3158.png');
 }
 .title-promo,
 .testimonial-title{
@@ -784,6 +800,30 @@ p{
         top: 40%;
         font-size: 25px;
      }
+    .faqs-section{
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .faq-img{
+        width: 25%;
+    }
+    .faq-container{
+        display: flex;
+        margin: 0px 100px;
+    }
+    .faq-questions,
+    .faq-img {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+    .faq-img-top{
+        width: 25%;
+    }
+    .img-faq-right{
+        width: 100%;
+    }
 }
 @media only screen and (min-width: 990px) {
     .video{
@@ -881,6 +921,9 @@ p{
         margin:0px 100px;
         padding: 5px 50px;
       }
+      .img-faq-right{
+        width: 100%;
+    }
 
 }
 @media only screen and (min-width: 1200px) {
@@ -902,6 +945,16 @@ p{
         top: 60%;
         font-size: 35px;
      }
+    .faq-container{
+        margin: 0px 150px;
+    }
+    .faq-questions,
+    .faq-img{
+        margin: 0px;
+    }
+    .img-faq-right{
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -932,4 +985,8 @@ p{
         top: 70%;
         font-size: 40px;
      }
+     .faq-container{
+        margin: 0px 250px;
+    }
 }
+
