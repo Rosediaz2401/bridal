@@ -370,6 +370,7 @@ p{
 }
 .book-img{
     box-shadow: none;
+    padding: 0;
 }
 .booking-title{
     text-align: left;
@@ -514,6 +515,14 @@ p{
 .more-info.my-active .faq-text{
     background-image: url('./img/less_3158.png');
 }
+.calendar{
+    border: 1px solid black;
+}
+.calendar-container{
+    opacity: 0;
+    padding: 0;
+}
+
 .title-promo,
 .testimonial-title{
     font-size: 34px;
@@ -823,6 +832,12 @@ p{
     }
     .img-faq-right{
         width: 100%;
+    }
+    .calendar-section{
+        align-items: flex-start;
+    }
+    .calendar{
+        margin-top: 30px;
     }
 }
 @media only screen and (min-width: 990px) {
