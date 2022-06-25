@@ -1,3 +1,13 @@
+/* 
+Theme Name: BridalPhotography
+Theme URI: https://bridalphotography.mx
+Author: Rosa Diaz
+Author ULI: https://bridalphotography.mx
+Description: Wedding Photography Website
+Version: 1.0.0
+Text Domain: bridalphotography
+License: GNU v# or Later
+*/
 :root{
     --main-font: "Montserrat", sans-serif;
     --font-size:14px;
@@ -576,6 +586,23 @@ p{
     font-family: Abril Fatface;
     line-height: 1.5;
 }
+.error{
+    background-color: #B2B2B2;
+    height: 600px;
+}
+.error-title{
+    color: white;
+    text-align: center;
+    font-family: 'arca_majora_3bold';
+    margin-top: 250px;
+}
+.go-home{
+    font-size: 14px;
+    margin-top: 0;
+}
+.error-link{
+    text-decoration: underline solid white;
+}
 
 @media only screen and (min-width: 480px) {
     .img-be-inspired{
@@ -839,6 +866,12 @@ p{
     .calendar{
         margin-top: 30px;
     }
+    .error-section{
+        display: block;
+    }
+    .go-home{
+        font-size: 17px;
+    }
 }
 @media only screen and (min-width: 990px) {
     .video{
@@ -1002,6 +1035,10 @@ p{
      }
      .faq-container{
         margin: 0px 250px;
+    }
+    .faq-questions,
+    .faq-img{
+        margin: 0px;
     }
 }
 
